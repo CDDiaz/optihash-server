@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 2021_09_08_003242) do
 
   create_table "cards", force: :cascade do |t|
     t.string "model"
-    t.string "hashrate"
-    t.string "power"
+    t.float "hashrate"
+    t.integer "power"
     t.string "gpu_maker"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

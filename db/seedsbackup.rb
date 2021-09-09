@@ -1,0 +1,52 @@
+User.destroy_all
+u1 = User.create :email => 'cd@ga.co', :password => 'chicken',:admin => true
+u2 = User.create :email => 'admin@ga.co', :password => 'chicken',:admin => true
+u3 = User.create :email => 'zz@ga.co', :password => 'chicken'
+puts "#{User.count} users."
+
+
+Card.destroy_all
+c1 = Card.create :model => 'GeForce RTX 3090', :hashrate => "114.00", :power => '320', :gpu_maker => 'NVIDIA'
+c2 = Card.create :model => 'Radeon VII', :hashrate => "93.00", :power => '200', :gpu_maker => 'AMD'
+c3 = Card.create :model => 'GeForce RTX 3080', :hashrate => "91.50", :power => '230', :gpu_maker => 'NVIDIA'
+c4 = Card.create :model => 'Radeon RX 6800', :hashrate => "64.00", :power => '150', :gpu_maker => 'AMD'
+c5 = Card.create :model => 'Radeon RX 6900 XT', :hashrate => "64.00", :power => '150', :gpu_maker => 'AMD'
+c6 = Card.create :model => 'Radeon RX 6800 XT', :hashrate => "64.00", :power => '150', :gpu_maker => 'AMD'
+c7 = Card.create :model => 'GeForce RTX 3060 Ti', :hashrate => "58.10", :power => '130', :gpu_maker => 'NVIDIA'
+c8 = Card.create :model => 'GeForce RTX 3070', :hashrate => "58.10", :power => '130', :gpu_maker => 'NVIDIA'
+c9 = Card.create :model => 'GeForce RTX 3080 Ti', :hashrate => "62.00", :power => '220', :gpu_maker => 'NVIDIA'
+c10 = Card.create :model => 'Radeon RX 5700 XT', :hashrate => "55.00", :power => '130', :gpu_maker => 'AMD'
+c11 = Card.create :model => 'Radeon RX 5700', :hashrate => "55.00", :power => '130', :gpu_maker => 'AMD'
+c12 = Card.create :model => 'GeForce RTX 2080 Ti', :hashrate => "55.20", :power => '180', :gpu_maker => 'NVIDIA'
+c13 = Card.create :model => 'GeForce RTX 3060 Unlocked', :hashrate => "48.00", :power => '110', :gpu_maker => 'NVIDIA'
+c14 = Card.create :model => 'Radeon RX 6700 XT', :hashrate => "48.00", :power => '140', :gpu_maker => 'AMD'
+c15 = Card.create :model => 'Radeon RX Vega 56', :hashrate => "49.00", :power => '170', :gpu_maker => 'AMD'
+c16 = Card.create :model => 'Radeon RX Vega 64', :hashrate => "50.00", :power => '190', :gpu_maker => 'AMD'
+c17 = Card.create :model => 'GeForce RTX 3070 Ti', :hashrate => "45.00", :power => '150', :gpu_maker => 'NVIDIA'
+c18 = Card.create :model => 'GeForce RTX 3080 LHR', :hashrate => "48.50", :power => '230', :gpu_maker => 'NVIDIA'
+c19 = Card.create :model => 'Radeon RX 5600 XT', :hashrate => "40.50", :power => '110', :gpu_maker => 'AMD'
+c20 = Card.create :model => 'GeForce RTX 2070', :hashrate => "40.0", :power => '140', :gpu_maker => 'NVIDIA'
+c21 = Card.create :model => 'GeForce RTX 2060 Super', :hashrate => "40.0", :power => '140', :gpu_maker => 'NVIDIA'
+c22 = Card.create :model => 'GeForce RTX 2070 Super', :hashrate => "40.0", :power => '140', :gpu_maker => 'NVIDIA'
+c23 = Card.create :model => 'GeForce RTX 2080 Super', :hashrate => "41.0", :power => '160', :gpu_maker => 'NVIDIA'
+c24 = Card.create :model => 'GeForce RTX 2080', :hashrate => "40.10", :power => '160', :gpu_maker => 'NVIDIA'
+c25 = Card.create :model => 'GeForce RTX 3060', :hashrate => "35.00", :power => '110', :gpu_maker => 'NVIDIA'
+c26 = Card.create :model => 'GeForce GTX 1080 Ti', :hashrate => "39.00", :power => '180', :gpu_maker => 'NVIDIA'
+c27 = Card.create :model => 'Radeon RX 6600 XT', :hashrate => "32.50", :power => '80', :gpu_maker => 'AMD'
+c28 = Card.create :model => 'GeForce RTX 3070 LHR', :hashrate => "30.00", :power => '130', :gpu_maker => 'NVIDIA'
+c29 = Card.create :model => 'GeForce RTX 3060 Ti LHR', :hashrate => "30.00", :power => '130', :gpu_maker => 'NVIDIA'
+c30 = Card.create :model => 'GeForce GTX 1660 Super', :hashrate => "29.30", :power => '90', :gpu_maker => 'NVIDIA'
+c31 = Card.create :model => 'GeForce GTX 1080', :hashrate => "34.00", :power => '170', :gpu_maker => 'NVIDIA'
+c32 = Card.create :model => 'GeForce GTX 1660 Ti', :hashrate => "28.00", :power => '80', :gpu_maker => 'NVIDIA'
+c33 = Card.create :model => 'GeForce RTX 2060', :hashrate => "30.00", :power => '120', :gpu_maker => 'NVIDIA'
+c34 = Card.create :model => 'Radeon RX 580 8GB', :hashrate => "30.50", :power => '130', :gpu_maker => 'AMD'
+c35 = Card.create :model => 'Radeon RX 480 8GB', :hashrate => "30.00", :power => '140', :gpu_maker => 'AMD'
+c36 = Card.create :model => 'Radeon RX 5500 XT 8GB', :hashrate => "26.00", :power => '90', :gpu_maker => 'AMD'
+c37 = Card.create :model => 'GeForce GTX 1070 Ti', :hashrate => "29.00", :power => '140', :gpu_maker => 'NVIDIA'
+c38 = Card.create :model => 'GeForce GTX 1660', :hashrate => "23.00", :power => '80', :gpu_maker => 'NVIDIA'
+c39 = Card.create :model => 'GeForce RTX 3060 LHR', :hashrate => "24.00", :power => '110', :gpu_maker => 'NVIDIA'
+c40 = Card.create :model => 'GeForce GTX 1060 6GB', :hashrate => "22.50", :power => '90', :gpu_maker => 'NVIDIA'
+c41 = Card.create :model => 'GeForce GTX 1070', :hashrate => "25.00", :power => '140', :gpu_maker => 'NVIDIA'
+# c42 = Card.create :model => 'Radeon RX 570 4GB', :hashrate => "26.00", :power => '90', :gpu_maker => 'AMD'
+
+puts "#{ Card.count } cards."

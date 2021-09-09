@@ -1,5 +1,8 @@
+require 'my_utilities'
+
 class CardsController < ApplicationController
   # before_action :set_card, only: %i[ show edit update destroy ]
+  include MyUtilities
 
   def index
     @cards = Card.all
@@ -21,7 +24,8 @@ class CardsController < ApplicationController
     @card = Card.find(params[:id])
     if @card
        render json: {
-       card: @card
+       card: @card,
+       info: scrapper(@card.model)
     }
     else
        render json: {
